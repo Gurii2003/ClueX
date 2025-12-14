@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Your Mystery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="split-desktop">
+
+  <div class="left-panel" style="background-image: url('assets/MS\ 6.png');"></div>
+
+  <div class="right-panel">
+    <h2>Story Setup</h2>
+    <form id="storyForm">
+      <label>Detective Name:
+        <input type="text" id="detective" required />
+      </label>
+      <label>Suspect Name:
+        <input type="text" id="suspect" required />
+      </label>
+      <label>Crime:
+        <select id="crime">
+          <option value="murder">Murder</option>
+          <option value="theft">Theft</option>
+          <option value="disappearance">Disappearance</option>
+        </select>
+      </label>
+      <label>Location:
+        <select id="location">
+          <option value="Toronto">Toronto</option>
+          <option value="Mississauga">Mississauga</option>
+          <option value="Scarborough">Scarborough</option>
+          <option value="Brampton">Brampton</option>
+          <option value="Markham">Markham</option>
+        </select>
+      </label>
+      <button type="submit">Generate Story</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

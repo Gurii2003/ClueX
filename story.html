@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Mystery Story</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="split-desktop">
+
+  <audio src="assets/mystery-sound.mp3" autoplay loop></audio>
+
+  <div class="left-panel" style="background-image: url('assets/MS\ 3.png');"></div>
+
+  <div class="right-panel">
+    <h2>Your Mystery Story</h2>
+    <img id="generatedImage" src="assets/ms1.png" alt="Mystery" style="max-width: 100%; margin-bottom: 1rem;" />
+    <div id="storyOutput" class="story-text">Loading story...</div>
+    <button onclick="regenerateStory()">🔄 New Story</button>
+    <button onclick="location.href='form.html'">✏️ Start Over</button>
+  </div>
+
+  <script src="story-data.js"></script>
+</body>
+</html>
